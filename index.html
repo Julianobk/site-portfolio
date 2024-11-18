@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site-Protfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link" onclick="scrollToSection('home')">Sobre</a></li>
+                <li><a href="#projects" class="nav-link" onclick="scrollToSection('projects')">Projetos</a></li>
+                <li><a href="#contact" class="nav-link" onclick="scrollToSection('contact')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="intro">
+            <h1>Olá, sou Juliano — Desenvolvedor de Sistemas </h1>
+            <p>Sou um desenvolvedor focado em criar projetos e solucionar problemas. Com formação em Sistemas de Informação, tenho experiência em algumas linguagens de programação, como Java, JavaScript, SQL, HTML e CSS. Além disso, minha base sólida em matemática me ajuda a aplicar soluções lógicas e funcionais para os desafios que enfrento. Estou sempre em busca de novas oportunidades para crescer e contribuir para o sucesso de uma equipe.</p>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Meus Projetos - Onde coloco em prática o que aprendo</h2>
+    <br><br>
+        
+        <div class="project-card" onclick="showProjectDetails('project1')">
+            <h3>Sistema Integrado com Banco de Dados</h3>
+            <div class="project-images">
+                <video id="myVideo" class="project-video"  muted controls>
+                    <source src="video/P.I.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                
+                <img src="img/Corpo2.png" alt="Sistema Integrado com Banco de Dados 2" class="project-img">
+            </div>
+            <p>Esse projeto eu fiz em equipe e ele funciona da seguinte forma: você abre o console e roda o programa, e irá aparecer as sessões de entrada da conta, desde o admin, onde você consegue gerenciar e cadastrar clientes, pedidos e ingredientes, até o cliente, onde você se cadastra e pode realizar pedidos.</p>
+        </div>
+    
+        
+        <div class="project-card" onclick="showProjectDetails('project2')">
+            <h3>Site Portfólio</h3>
+            <img  class="print" src="img/print.png" alt="Site Portfólio" class="project-img">
+            <p>Decidi criar esse portfólio para mostrar meus projetos atuais e futuros. Esse site também tem a intenção de me apresentar a novos lugares e novas oportunidades. Esse site básico funciona tanto pela rolagem quanto pelas sessões "Sobre", "Projetos" e "Contato". Em sua criação usei html, css e um pouco de JavaScript.</p>
+        </div>
+    </section>
+    <h1 id="tempo">Com o tempo irei aumentando o número de projetos e realizações!!</h1>
+    
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Você pode entrar em contato comigo através das informações abaixo:</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <i class="fas fa-envelope"></i> <a href="mailto:julianobk04@gmail.com">julianobk04@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/julianobk" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/julianobk</a></p>
+            <p><strong>GitHub:</strong> <i class="fab fa-github"></i> <a href="https://github.com/julianobk" target="_blank">github.com/julianobk</a></p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Juliano</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
